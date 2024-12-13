@@ -1,6 +1,6 @@
 // DON'T OPEN THE PROJECT WITH LIVE SERVER BECAUSE THE PATHNAME WILL BE CHANGE
 
-if (window.location.pathname.("https://hossamgamaldwidar.github.io/Assignment-4-JS/")) {
+if (window.location.href === "https://hossamgamaldwidar.github.io/Assignment-4-JS/") {
     // ===============================index.html================================= //
 console.log("LOGIN PAGE");
 var email = document.querySelector('#email');
