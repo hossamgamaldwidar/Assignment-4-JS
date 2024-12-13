@@ -139,11 +139,16 @@ if (window.location.pathname === "/Assignment-4-JS/") {
 } else if (window.location.pathname.endsWith("welcompage.html")) {
     // ===============================welcompage================================= //
     console.log("WELCOME PAGE");
-    var welcomeUser = document.querySelector('#welcomeUser');
+    var fakeLogoutBtn = document.querySelector('#fakeLogoutBtn');
     var logoutBtn = document.querySelector('#logoutBtn');
-
+    var welcomeUser = document.querySelector('#welcomeUser');
+    var goLogOut = document.querySelector('.goLogOut');
     welcomeUser.textContent = `Welcome ${localStorage.getItem('CurrentUser')}`;
 
+     fakeLogoutBtn.addEventListener('click', function () {
+    document.querySelector('#goLogOut').classList.remove('d-none')
+    });
+    
     logoutBtn.addEventListener('click', function () {
         localStorage.removeItem('CurrentUser');
         window.location.href = "https://hossamgamaldwidar.github.io/Assignment-4-JS/";
