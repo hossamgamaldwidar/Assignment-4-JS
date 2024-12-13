@@ -176,7 +176,7 @@ btnLogin.addEventListener('click', function () {
     });
     logoutBtn.addEventListener('click', function () {
         localStorage.removeItem('CurrentUser');
-        window.location.href = "index.html";
+        window.location.href = "https://hossamgamaldwidar.github.io/Assignment-4-JS/";
     });
 
 } else {
