@@ -1,0 +1,137 @@
+*{
+        box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+#LoginToAccount , #createAccount{
+    cursor: pointer;
+}
+.sign-form{
+    transition: 2s;
+}
+.sign:hover .sign-form{
+    transform: scale(1.05);
+}
+.login-form {
+    transition: 2s;
+}
+
+.login:hover .login-form{
+    transform: scale(1.05);
+}
+.Sign-btn-first-in{
+    color: #3498db;
+    background-image: linear-gradient(to right, #3498db 100%, white 100%);
+    background-size: 0% 100%; 
+    background-repeat: no-repeat;
+    animation: gradientFill 1s ease forwards; 
+}
+
+@keyframes gradientFill {
+    0% {
+        background-size: 0% 100%; 
+    }
+    100% {
+        background-size: 33.33% 100%;
+    }
+}
+
+
+.Sign-btn-first-out {
+    color: #3498db;
+    background-image: linear-gradient(to right, #3498db 100%, #ffffff 100%);
+    background-size: 33.33% 100%; 
+    background-repeat: no-repeat;
+    animation: gradientFillOut 1s ease forwards;
+}
+
+@keyframes gradientFillOut {
+    0% {
+        background-size: 33.33% 100%; 
+    }
+    100% {
+        background-size: 0% 100%;
+    }
+}
+.Sign-btn-second {
+    color: white;
+    background-image: linear-gradient(to right, #3498db 100%, white 100%);
+    background-size: 0% 100%; 
+    background-repeat: no-repeat;
+    animation: gradientFillSecond 1s ease forwards;
+}
+
+@keyframes gradientFillSecond {
+    0% {
+        background-size: 33.33% 100%;
+        color: #3498db;
+    }
+    100% {
+        background-size: 66.66% 100%; 
+        color: #ffffff;
+    }
+}
+.Sign-btn-third {
+    color: white;
+    background-image: linear-gradient(to right, #3498db 100%, white 100%);
+    background-size: 66.66% 100%; 
+    background-repeat: no-repeat;
+    animation: gradientFillThird 1s ease forwards; 
+}
+
+@keyframes gradientFillThird {
+    0% {
+        background-size: 66.66% 100%;
+        color: #ffffff;
+    }
+    100% {
+        background-size: 100% 100%;
+        color: #ffffff;
+    }
+}
+.btnSign-baz{
+    border: #3498db solid 1px;;
+    color: #3498db;
+}
+.btnSign-baz:hover{
+    border: #3498db solid 1px;;
+    color: #3498db;
+}
+.btnlogin-baz{
+    border: #3498db solid 1px;;
+    color: #3498db;
+    background-color: #ffffff;
+}
+.btnlogin-baz:hover{
+    border: #3498db solid 1px;;
+    background-color: #3498db;
+    color: white;
+}
+.welcome{
+    font-family: "Lilita One", sans-serif;
+    color: #3498db;
+    font-size: 50px;
+    font-weight: bold;
+}
+.btn-logout{
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+.btn-logout:hover{
+    background-color: white;
+    color: #3498db;
+    border: #3498db 1px solid;
+    font-weight: bold;
+}
+.goLogOut{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.572);
+}

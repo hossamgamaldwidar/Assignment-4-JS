@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Welcome Page</title>
+</head>
+<body>
+    <section class="welcome" id="welcomePage">
+        <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+            <div class="mt-3" id="welcomeUser"></div>
+            <h1>How are U</h1>
+            <img src="Images/chiens-funnyanimals.gif" alt="">
+            <button class="btn-logout btn btn-primary mt-3 w-50" id="fakeLogoutBtn">Logout</button>
+        </div>
+        <div class="goLogOut d-flex justify-content-center align-items-center d-none" id="goLogOut">
+            <div class="bg-light p-5 d-flex flex-column justify-content-center align-items-center">
+                <h2>Are you leaving??</h2>
+                <img src="./Images/appalled-wtf.gif">
+                <button class="btn-logout btn btn-primary mt-3 w-50" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </section>
+    <script src="JS/index.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
