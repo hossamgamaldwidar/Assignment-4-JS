@@ -31,35 +31,45 @@ if (window.location.pathname === "/Assignment-4-JS/") {
         document.querySelector('.login').classList.replace('d-none', 'd-block');
     });
 
-    document.querySelector('#nameSign').addEventListener('input', function (e) {
-        if (!usernameRegex.test(nameSign.value)) {
-            nameSign.classList.add('is-invalid');
-            nameSign.classList.remove('is-valid');
-        } else {
-            nameSign.classList.remove('is-invalid');
-            nameSign.classList.add('is-valid');
+   document.querySelector('#nameSign').addEventListener('input', function (e) {
+    if (!usernameRegex.test(nameSign.value)) {
+        nameSign.classList.add('is-invalid');
+        nameSign.classList.remove('is-valid');
+        if (btnSign.classList.contains('Sign-btn-first-in')) {
+            btnSign.classList.remove('Sign-btn-first-in');
+            btnSign.classList.add('Sign-btn-first-out');
         }
-    });
-
-    document.querySelector('#emailSign').addEventListener('input', function (e) {
-        if (!emailRegex.test(emailSign.value)) {
-            emailSign.classList.add('is-invalid');
-            emailSign.classList.remove('is-valid');
-        } else {
-            emailSign.classList.remove('is-invalid');
-            emailSign.classList.add('is-valid');
+    } else {
+        nameSign.classList.remove('is-invalid');
+        nameSign.classList.add('is-valid');
+        if (!btnSign.classList.contains('Sign-btn-first-in')) {
+            btnSign.classList.add('Sign-btn-first-in');
+            btnSign.classList.remove('Sign-btn-first-out');
         }
-    });
-
-    document.querySelector('#passwordSign').addEventListener('input', function (e) {
-        if (!passwordRegex.test(passwordSign.value)) {
-            passwordSign.classList.add('is-invalid');
-            passwordSign.classList.remove('is-valid');
-        } else {
-            passwordSign.classList.remove('is-invalid');
-            passwordSign.classList.add('is-valid');
-        }
-    });
+    }
+});
+document.querySelector('#emailSign').addEventListener('input', function (e) {
+    if (!emailRegex.test(emailSign.value)) {
+        emailSign.classList.add('is-invalid');
+        emailSign.classList.remove('is-valid');
+        btnSign.classList.remove('Sign-btn-second');
+    } else {
+        emailSign.classList.remove('is-invalid');
+        emailSign.classList.add('is-valid');
+        btnSign.classList.add('Sign-btn-second');
+    }
+});
+document.querySelector('#passwordSign').addEventListener('input', function (e) {
+    if (!passwordRegex.test(passwordSign.value)) {
+        passwordSign.classList.add('is-invalid');
+        passwordSign.classList.remove('is-valid');
+        btnSign.classList.remove('Sign-btn-third');
+    } else {
+        passwordSign.classList.remove('is-invalid');
+        passwordSign.classList.add('is-valid');
+        btnSign.classList.add('Sign-btn-third');
+    }
+});
 
     btnSign.addEventListener('click', function () {
         signUp();
